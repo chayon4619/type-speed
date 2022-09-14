@@ -68,13 +68,24 @@
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Accordion Item #3
+                        <strong>How does javascript event loop work?</strong>
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+                        <strong>The Event Loop</strong> has one simple job — to monitor the Call Stack and the Callback
+                        Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and
+                        will push it to the Call Stack, which effectively runs it.
 
+                        Such an iteration is called a tick in the Event Loop. Each event is just a function
+                        callback.While the Call Stack has functions to execute, the browser can’t do anything else —
+                        it’s being blocked. This means that the browser can’t render, it can’t run any other code, it’s
+                        just stuck. And here comes the problem — your app UI is no longer efficient and pleasing.In some
+                        cases, this might not be such a critical issue. But hey — here’s an even bigger problem. Once
+                        your browser starts processing too many tasks in the Call Stack, it may stop being responsive
+                        for a long time. At that point, a lot of browsers would take action by raising an error, asking
+                        whether they should terminate the page.
                     </div>
                 </div>
             </div>
@@ -82,12 +93,21 @@
                 <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Accordion Item #4
+                        <strong>How many types undefined we get in javascript?</strong>
                     </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+                        <strong>We get undefined in many ways</strong><br>
+                        1. Variable that is not initialized will give undefined. <br>
+                        2. Function with no return . <br>
+                        3. Parameter that is not passed will be undefined. <br>
+                        4. If return has nothing on the right side will return undefined . <br>
+                        5. Property that doesn't exists on an object will give you undefined . <br>
+                        6. Accessing array elements outside of the index range . <br>
+                        7. Deleting an element inside an array . <br>
+                        8. Set a value directly to undefined . <br>
 
                     </div>
                 </div>
