@@ -62,9 +62,9 @@ body {
 
 #result {
   position: fixed;
-  top: 10%;
-  left: 10%;
-  transform: translate(80%, 50%);
+  top: 30%;
+  /* left: 10%; */
+  /* transform: translate(80%, 50%); */
   height: 250px;
   width: 400px;
   background-color: #171717;
@@ -73,6 +73,13 @@ body {
   color: white;
   text-align: center;
   padding: 2rem;
+}
+
+#s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vh; */
 }
 
 #show-time {
